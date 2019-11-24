@@ -1,9 +1,9 @@
 export default {
   template:`
   <header>
-  <span>
-  Hi!! WEATHER
-  </span>
+    <span>
+      Hi!! WEATHER
+    </span>
   </header>
   `
 }

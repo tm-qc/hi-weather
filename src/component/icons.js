@@ -174,7 +174,7 @@ export default {
                     c1.657,0,3-1.344,3-3S41.658,42.001,40,42.001z"/>
                   </svg>`
           break;
-          default://サイズが...
+          default://対象アイコンがない場合
             svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     x="0px" y="0px" width="50" height="50" viewBox="17 12 70 70">
                   <style type="text/css">

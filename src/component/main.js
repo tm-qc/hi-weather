@@ -65,8 +65,7 @@ export default {
   },
   updated(){
     this.$nextTick(function () {
-      // ビュー全体がレンダリングされた後にのみ実行されるコード
-      //this.svgfill()
+      // ビュー全体がレンダリングされた後にのみ実行されるコードを記載する
     })
   },
   computed:{
@@ -109,6 +108,7 @@ export default {
         console.log('Api通信失敗：'+error.response.status +' '+ error.response.statusText)
       }
     },
+    //本当はweek.jsと共通関数かしたかったけど、グローバルに置くとsafariでエラーになるので後日確認
     timeStampCompile(timestamp,mode){
       const d = new Date( timestamp * 1000 );
       const year  = d.getFullYear();
