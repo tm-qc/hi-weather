@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  color: #FFF;
+  width: 100vw;
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  padding: 8px 0px 0px 0px;
+}
+
+footer {
+  font-size: 24px;
+  text-align: right;
+  margin: 8px 16px;
+}
+
+.wCard, .weekCard {
+  position: relative;
+  font-size: 64px;
+  height: 440px;
+  background: #111;
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.weekCard {
+  height: 95%;
+}
+
+.wMain {
+  position: relative;
+  height: 50%;
+}
+
+.date {
+  font-size: 48px;
+  padding: 16px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weekDate {
+  font-size: 48px;
+  padding: 16px 0px 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekDate:not(.weekDate:nth-child(1)) {
+  padding: 16px 0px 0px 0px;
+}
+
+.weekDate:nth-child(1) {
+  padding: 8px 0px 0px 0px;
+}
+
+.timing-now {
+  text-align: center;
+  padding: 0px 8px;
+  background: red;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.timing-week {
+  text-align: center;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.iconArea {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.iconAreaWeek {
+  height: 50px;
+  width: 50px;
+}
+
+#Layer_1 {
+  fill: white;
+  width: 100%;
+  height: 100%;
+}
+
+.mainTemp #Layer_1 {
+  fill: #faff00;
+  width: 35px;
+}
+
+.windItem #Layer_1 {
+  fill: #14ff00;
+  width: 50px;
+}
+
+.windText {
+  width: 87px;
+}
+
+.wInfo {
+  font-size: 40px;
+  font-family: 'M PLUS 1p', cursive;
+  margin: -16px 0px 16px 0px;
+}
+
+.subInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 48px;
+}
+
+.mainTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.windItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #14ff00;
+}
+
+.temp {
+  color: #faff00;
+  width: 50px;
+  margin-right: 8px;
+}
+
+.tempMax {
+  color: #ff9b00;
+  font-size: 40px;
+}
+
+.tempMin {
+  color: #00ffe6;
+  font-size: 32px;
+}
+/*# sourceMappingURL=style.css.map */
