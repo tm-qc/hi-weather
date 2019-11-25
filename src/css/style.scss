@@ -24,14 +24,11 @@ body{
   background-blend-mode: multiply;
   color: rgb(255, 255, 255);
   font-family: 'Big Shoulders Display', cursive;
-  height: 100vh;
-  // text-shadow: 0 0 2px rgb(255, 255, 255),0 0 4px rgb(255, 255, 255);
 }
 
 header{
   text-align: center;
   color: #FFF;
-  width: 100vw;
   font-size: 40px;
   font-family: 'Righteous', cursive;
   padding:8px 0px 0px 0px;
@@ -43,140 +40,128 @@ footer{
   margin: 8px 16px;
 }
 
-.wCard,.weekCard{
+.svgColor{
+  fill:white;
+  width: 100%;
+  height: 100%;
+}
+
+.wCard{
   position: relative;
   font-size: 64px;
   height: 440px;
   background: #111;
   text-align: center;
   margin: 16px 0px;
-}
-
-.weekCard{
-  height: 95%;
-}
-
-.wMain{
-  position: relative;
-  height: 50%;
-}
-
-.date{
-  font-size: 48px;
-  padding: 16px 0px 0px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-.weekDate{
-  font-size: 48px;
-  padding: 16px 0px 16px 0px;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 16px;
-  align-items:center;
-}
-
-.weekDate:not(.weekDate:nth-child(1)){
-  padding: 16px 0px 0px 0px;
-}
-
-.weekDate:nth-child(1){
-  padding: 8px 0px 0px 0px;
-}
-
-.timing-now{
-  text-align: center;
-  padding: 0px 8px;
-  background: red;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-
-.timing-week{
-  text-align: center;
-  padding:8px;
-  margin-right: 8px;
-}
-
-.iconArea {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.iconAreaWeek {
-  height: 50px;
-  width: 50px;
-}
-
-#Layer_1{
-  fill:white;
-  width: 100%;
-  height: 100%;
-}
-
-.mainTemp #Layer_1 {
-  fill: #faff00;
-  width: 35px;
-}
-
-.windItem #Layer_1 {
-  fill: rgb(20, 255, 0);
-  width: 50px;
-}
-
-.windText{
-  width: 87px;
-}
-
-.wInfo {
-  font-size: 40px;
-  font-family: 'M PLUS 1p', cursive;
-  margin: -16px 0px 16px 0px;
+  &__date{
+    font-size: 48px;
+    padding: 16px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  &__timing-now{
+    text-align: center;
+    padding: 0px 8px;
+    background: red;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  &__wMain{
+    position: relative;
+    height: 50%;
+  }
+  &__wInfo{
+    font-size: 40px;
+    font-family: 'M PLUS 1p', cursive;
+    margin: -16px 0px 16px 0px;
+  }
+  &__iconArea{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .subInfo{
   display: flex;
   justify-content: space-around;
   font-size: 48px;
+  &__windItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(20, 255, 0);
+  }
+  &__windText{
+    width: 87px;
+  }
+  &__mainTemp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__mainTemp--temp{
+    color: rgb(250, 255, 0);
+    width:50px;
+    margin-right: 8px;
+  }
 }
 
-.mainTemp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subInfo__mainTemp .svgColor {
+  fill: #faff00;
+  width: 35px;
 }
 
-.windItem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(20, 255, 0);
-  // text-shadow: 0 0 2px rgb(20, 255, 0),0 0 4px rgb(20, 255, 0);
+.subInfo__windItem .svgColor {
+  fill: rgb(20, 255, 0);
+  width: 50px;
 }
 
-.temp{
-  color: rgb(250, 255, 0);
-  width:50px;
-  margin-right: 8px;
-  // text-shadow: 0 0 2px rgb(250, 255, 0),0 0 4px rgb(250, 255, 0);
+.weekCard{
+  position: relative;
+  font-size: 64px;
+  height: 95%;
+  background: #111;
+  text-align: center;
+  margin: 16px 0px;
+  &__weekDate{
+    position: relative;
+    font-size: 40px;
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 16px;
+    align-items:baseline;
+  }
+  &__timing-week{
+    text-align: center;
+    padding:8px;
+  }
+  &__date{
+    font-style: 40px;
+  }
+  &__iconAreaWeek{
+    height: 50px;
+    width: 50px;
+  }
+  &__tempMax{
+    color: rgb(255, 155, 0);
+    font-size: 40px;
+  }
+  &__tempMin{
+    color: rgb(0, 255, 230);
+    font-size: 32px;
+  }
 }
 
-.tempMax{
-  color: rgb(255, 155, 0);
-  font-size: 40px;
-  // text-shadow: 0 0 2px rgb(255, 155, 0),0 0 4px rgb(255, 155, 0);
+.weekCard__iconAreaWeek div div:nth-child(1){
+  position: absolute;
+  top: 22px;
 }
 
-.tempMin{
-  color: rgb(0, 255, 230);
-  font-size: 32px;
-  // text-shadow: 0 0 2px rgb(0, 255, 230),0 0 4px rgb(0, 255, 230);
-}
 

@@ -11,7 +11,7 @@ export default {
         let svg = ''
         switch(true){
           case name === 'clear-day'://晴れ昼 Sun.svg　元はviewBox="0 0 100 100"
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="15 15 70 70">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M71.997,51.999h-3.998c-1.105,0-2-0.895-2-1.999s0.895-2,2-2h3.998
                   c1.105,0,2,0.896,2,2S73.103,51.999,71.997,51.999z M64.142,38.688c-0.781,0.781-2.049,0.781-2.828,0
@@ -29,7 +29,7 @@ export default {
                 </svg>`
           break;
           case name === 'clear-night'://晴れ夜 Moon.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="33 33 35 35" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M50,61.998c-6.627,0-11.999-5.372-11.999-11.998
                   c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788
@@ -40,7 +40,7 @@ export default {
                 `
           break;
           case name === 'partly-cloudy-day'://晴れ時々曇り昼 Cloud-Sun.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="20 10 70 70" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M79.941,43.641h-4c-1.104,0-2-0.895-2-2c0-1.104,0.896-1.998,2-1.998h4
                   c1.104,0,2,0.895,2,1.998C81.941,42.746,81.045,43.641,79.941,43.641z M72.084,30.329c-0.781,0.781-2.047,0.781-2.828,0
@@ -60,7 +60,7 @@ export default {
                 `
           break;
           case name === 'partly-cloudy-night'://晴れ時々曇り夜 Cloud-Moon.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="17 12 70 70" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M69.763,46.758L69.763,46.758c1.368,1.949,2.179,4.318,2.179,6.883
                   c0,6.625-5.371,11.998-11.998,11.998c-2.775,0-12.801,0-15.998,0c-8.836,0-15.998-7.162-15.998-15.998s7.162-15.998,15.998-15.998
@@ -76,7 +76,7 @@ export default {
                 `
           break;
           case name === 'rain'://雨 Cloud-Drizzle.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="15 15 70 70" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M63.943,64.941v-4.381c2.387-1.385,3.998-3.961,3.998-6.92c0-4.418-3.58-8-7.998-8
                   c-1.602,0-3.084,0.481-4.334,1.291c-1.232-5.316-5.973-9.29-11.664-9.29c-6.627,0-11.998,5.372-11.998,11.999
@@ -93,7 +93,7 @@ export default {
                 </svg>`
           break;
           case name === 'cloudy'://曇り Cloud.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="15 15 70 70" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M43.945,65.639c-8.835,0-15.998-7.162-15.998-15.998
                   c0-8.836,7.163-15.998,15.998-15.998c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205
@@ -103,7 +103,7 @@ export default {
                 </svg>`
           break;
           case name === 'snow'://雪 Snowflake.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="33 33 35 35" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M59.659,46.733l-1.958,1.13c0.188,0.682,0.298,1.396,0.298,2.137
                   c0,0.742-0.109,1.456-0.298,2.138l1.958,1.13c0.956,0.553,1.284,1.775,0.731,2.732c-0.552,0.956-1.774,1.284-2.731,0.731
@@ -117,7 +117,7 @@ export default {
                 </svg>`
           break;
           case name === 'sleet'://ミゾレ Cloud-Hail.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="100px" height="100px" viewBox="15 15 70 70" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M63.999,64.941v-4.381c2.389-1.383,3.999-3.961,3.999-6.92
                   c0-4.417-3.581-7.999-7.998-7.999c-1.601,0-3.084,0.48-4.334,1.291c-1.231-5.317-5.974-9.29-11.665-9.29
@@ -133,7 +133,7 @@ export default {
                 </svg>`
           break;
           case name === 'wind'://風 Wind.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="40" viewBox="40 25 25 45">
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="40" viewBox="40 25 25 45">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M65.999,52L65.999,52h-3c-1.105,0-2-0.895-2-1.999s0.895-2,2-2h3
                   c1.104,0,2-0.896,2-1.999c0-1.105-0.896-2-2-2c-1.105,0-2-0.896-2-2s0.895-2,2-2c0.137,0,0.271,0.014,0.402,0.041
                   c3.121,0.211,5.596,2.783,5.596,5.959C71.997,49.314,69.312,52,65.999,52z M55.999,48.001h-2h-6.998H34.002
@@ -145,7 +145,7 @@ export default {
                 </svg>`
           break;
           case name === 'fog'://霧 Cloud-Fog-Sun-Alt.svg
-          svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="100px" height="100px" viewBox="20 10 70 70" xml:space="preserve">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M79.997,43.643h-4c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h4
                 c1.104,0,2,0.896,2,2C81.997,42.746,81.101,43.643,79.997,43.643z M72.14,30.33c-0.781,0.781-2.047,0.781-2.828,0
@@ -166,7 +166,7 @@ export default {
               </svg>`
           break;
           case name === 'temp': //温度C
-            svg = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40" viewBox="30 35 30 45">
+            svg = `<svg version="1.1" id="Layer_1" class="svgColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40" viewBox="30 35 30 45">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M58.999,42.001c-2.209,0-4,1.791-4,4V54c0,2.209,1.791,3.999,4,3.999
                     s4-1.79,4-3.999h3.998c0,4.418-3.58,7.999-7.998,7.999s-8-3.581-8-7.999v-7.999c0-4.418,3.582-7.999,8-7.999
                     s7.998,3.581,7.998,7.999h-3.998C62.999,43.792,61.208,42.001,58.999,42.001z M40,52c-3.865,0-6.998-3.134-6.998-6.999

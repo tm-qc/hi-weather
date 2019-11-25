@@ -1,5 +1,8 @@
 #php
 index.php
+#scss
+style.scss
+style.css.map
 #見せる必要はないもの
 メモ.txt
 gitメモ.txt

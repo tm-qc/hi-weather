@@ -25,33 +25,26 @@ export default {
       <select required  v-model="selectVal" v-html=s.getters.placeOption @change="selected"></select>
     </div>
     <div class="wCard">
-      <div class="date">
-        <div class="timing-now">NOW</div>
+      <div class="wCard__date">
+        <div class="wCard__timing-now">NOW</div>
         <div>{{timeStampCompile(c.time,"now")}}</div>
       </div>
-      <div class="wMain">
-        <div class="iconArea">
+      <div class="wCard__wMain">
+        <div class="wCard__iconArea">
           <prefix_icons :weatherInfo=c.icon></prefix_icons>
         </div>
       </div>
-      <div class="wInfo">
+      <div class="wCard__wInfo">
         <span>{{c.summary}}</span>
       </div>
       <div class="subInfo">
-        <div class="tempItem">
-          <div class="mainTemp">
-            <div class="temp">{{c.temperature}}</div>
-            <prefix_icons weatherInfo="temp"></prefix_icons>
-          </div>
-          <!---現在の天気にはない
-          <div class="">
-            <span class="tempMax">{{c.temperatureMax}}</span>
-            <span class="tempMin">{{c.temperatureMin}}</span>
-          </div>-->
+        <div class="subInfo__mainTemp">
+          <div class="subInfo__mainTemp--temp">{{c.temperature}}</div>
+          <prefix_icons weatherInfo="temp"></prefix_icons>
         </div>
-        <div class="windItem">
+        <div class="subInfo__windItem">
           <prefix_icons weatherInfo="wind"></prefix_icons>
-          <div class="windText">{{c.windSpeed}}<span>m/s</span></div>
+          <div class="subInfo__windText">{{c.windSpeed}}<span>m/s</span></div>
         </div>
       </div>
     </div>

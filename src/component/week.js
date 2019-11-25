@@ -9,14 +9,15 @@ export default{
   template:`
   <div v-if="ss.getComp" >
     <div class="weekCard">
-      <div class="weekDate"　v-for="(day,index) in d.data">
-      <template v-if="index!==0">
-        <div class="timing-week">{{index}}day</div>
-        <div>{{timeStampCompile(d.data[index].time,"day")}}</div>
-        <div class="tempMax">{{d.data[index].temperatureHigh}}</div>
-        <div class="tempMin">{{d.data[index].temperatureLow}}</div>
-        <div class="iconAreaWeek">
-          <prefix_icons :weatherInfo=d.data[index].icon></prefix_icons>
+      <template v-for="(day,index) in d.data">
+        <div v-if="index!==0" class="weekCard__weekDate">
+          <div class="weekCard__timing-week">{{index}}day</div>
+          <div class="weekCard__date">{{timeStampCompile(d.data[index].time,"day")}}</div>
+          <div class="weekCard__tempMax">{{d.data[index].temperatureHigh}}</div>
+          <div class="weekCard__tempMin">{{d.data[index].temperatureLow}}</div>
+          <div class="weekCard__iconAreaWeek">
+            <prefix_icons :weatherInfo=d.data[index].icon></prefix_icons>
+          </div>
         </div>
       </template>
       </div>
