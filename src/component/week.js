@@ -13,8 +13,8 @@ export default{
         <div v-if="index!==0" class="weekCard__weekDate">
           <div class="weekCard__timing-week">{{index}}day</div>
           <div class="weekCard__date">{{timeStampCompile(d.data[index].time,"day")}}</div>
-          <div class="weekCard__tempMax">{{d.data[index].temperatureHigh}}</div>
-          <div class="weekCard__tempMin">{{d.data[index].temperatureLow}}</div>
+          <div class="weekCard__tempMax">{{mathRound(d.data[index].temperatureHigh)}}</div>
+          <div class="weekCard__tempMin">{{mathRound(d.data[index].temperatureLow)}}</div>
           <div class="weekCard__iconAreaWeek">
             <prefix_icons :weatherInfo=d.data[index].icon></prefix_icons>
           </div>
@@ -33,14 +33,17 @@ export default{
     },
     time(){
       return (time,mode)=>timeStampCompile(time,mode)
+    },
+    mathRound(num){
+      return (num)=>Math.round(num)
     }
   },
   methods:{
     timeStampCompile(timestamp,mode){
       const d = new Date( timestamp * 1000 );
       const year  = d.getFullYear();
-      const month = d.getMonth() + 1;
-      const day  = d.getDate();
+      const month = ( d.getMonth() + 1  < 10 ) ? '0' + d.getMonth() + 1  : d.getMonth() + 1
+      const day  = ( d.getDate()   < 10 ) ? '0' + d.getDate()   : d.getDate();
       const hour = ( d.getHours()   < 10 ) ? '0' + d.getHours()   : d.getHours();
       const min  = ( d.getMinutes() < 10 ) ? '0' + d.getMinutes() : d.getMinutes();
       const sec   = ( d.getSeconds() < 10 ) ? '0' + d.getSeconds() : d.getSeconds();
@@ -54,3 +57,5 @@ export default{
     }
   }
 }
+
+// ("0"+d.getDate())

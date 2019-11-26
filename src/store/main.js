@@ -44,12 +44,7 @@ export default new Vuex.Store({
   getters:{
     placeOption:state=>{
       return state.placeName.reduce((option,name,idx)=>{
-        if(state.initPlace === name){
-          option+='<option value="'+name+'" selected>'+name+'</option>'
-        }else{
-          option+='<option value="'+name+'">'+name+'</option>'
-        }
-        return option
+        return option+='<option value="'+name+'">'+name+'</option>'
       },'')
       }
   }

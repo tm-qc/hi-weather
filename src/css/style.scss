@@ -46,6 +46,12 @@ footer{
   height: 100%;
 }
 
+.weekCard__iconAreaWeek .svgColor{
+  fill:white;
+  width: 60%;
+  height: 60%;
+}
+
 .wCard{
   position: relative;
   font-size: 64px;
@@ -132,7 +138,7 @@ footer{
   &__weekDate{
     position: relative;
     font-size: 40px;
-    padding: 16px 0px 16px 0px;
+    padding: 8px 0px 8px 0px;
     display: flex;
     justify-content: space-around;
     margin: 0 16px;
@@ -140,22 +146,22 @@ footer{
   }
   &__timing-week{
     text-align: center;
-    padding:8px;
+    width: 20%;
   }
-  &__date{
-    font-style: 40px;
-  }
+  // &__date{
+    
+  // }
   &__iconAreaWeek{
     height: 50px;
     width: 50px;
   }
   &__tempMax{
     color: rgb(255, 155, 0);
-    font-size: 40px;
+    width: 10%;
   }
   &__tempMin{
     color: rgb(0, 255, 230);
-    font-size: 32px;
+    width: 10%;
   }
 }
 

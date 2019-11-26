@@ -48,6 +48,12 @@ footer {
   height: 100%;
 }
 
+.weekCard__iconAreaWeek .svgColor {
+  fill: white;
+  width: 60%;
+  height: 60%;
+}
+
 .wCard {
   position: relative;
   font-size: 64px;
@@ -164,7 +170,7 @@ footer {
 .weekCard__weekDate {
   position: relative;
   font-size: 40px;
-  padding: 16px 0px 16px 0px;
+  padding: 8px 0px 8px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,11 +184,7 @@ footer {
 
 .weekCard__timing-week {
   text-align: center;
-  padding: 8px;
-}
-
-.weekCard__date {
-  font-style: 40px;
+  width: 20%;
 }
 
 .weekCard__iconAreaWeek {
@@ -192,12 +194,12 @@ footer {
 
 .weekCard__tempMax {
   color: #ff9b00;
-  font-size: 40px;
+  width: 10%;
 }
 
 .weekCard__tempMin {
   color: #00ffe6;
-  font-size: 32px;
+  width: 10%;
 }
 
 .weekCard__iconAreaWeek div div:nth-child(1) {
