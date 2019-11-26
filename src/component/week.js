@@ -31,10 +31,7 @@ export default{
     d(){
       return this.ss.daily
     },
-    time(){
-      return (time,mode)=>timeStampCompile(time,mode)
-    },
-    mathRound(num){
+    mathRound(){
       return (num)=>Math.round(num)
     }
   },
