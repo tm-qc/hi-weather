@@ -41,11 +41,4 @@ export default new Vuex.Store({
       commit('getComp',payload.flg)
     },
   },
-  getters:{
-    placeOption:state=>{
-      return state.placeName.reduce((option,name,idx)=>{
-        return option+='<option value="'+name+'">'+name+'</option>'
-      },'')
-      }
-  }
 })

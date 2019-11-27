@@ -22,7 +22,11 @@ export default {
   <prefix_header />
   <div v-if="ss.getComp">
     <div class="cp_ipselect cp_sl03">
-      <select required  v-model="selectVal" v-html=s.getters.placeOption @change="selected"></select>
+      <select required  v-model="selectVal" @change="selected">
+      <option :value=name v-for="name in ss.placeName">
+          {{name}}
+      </option>
+      </select>
     </div>
     <div class="wCard">
       <div class="wCard__date">
@@ -64,13 +68,7 @@ export default {
   computed:{
     c(){
       return this.ss.currently
-    },
-    time(){
-      return (time,mode)=>timeStampCompile(time,mode)
-    },
-    // h(){
-    //   return this.ss.hourly
-    // }
+    }
   },
   methods:{
     async get(val){
