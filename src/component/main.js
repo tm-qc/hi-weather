@@ -1,8 +1,9 @@
+import myMixin from '../mixins/main.js'
 import prefix_header from './header.js'
 import prefix_footer from './footer.js'
 import prefix_icons from './icons.js'
 import prefix_week from './week.js'
-import myMixin from '../mixins/main.js'
+import prefix_hour from './hour.js'
 
 export default {
   data(){
@@ -17,6 +18,7 @@ export default {
     prefix_icons,
     prefix_footer,
     prefix_week,
+    prefix_hour,
   },
   mixins: [myMixin],
   template:`
@@ -54,7 +56,8 @@ export default {
         </div>
       </div>
     </div>
-    <prefix_week></prefix_week>
+    <prefix_hour />
+    <prefix_week />
     <prefix_footer /> 
   </div>
   </div>

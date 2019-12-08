@@ -50,15 +50,14 @@ footer {
 
 .weekCard__iconAreaWeek .svgColor {
   fill: white;
-  width: 60%;
-  height: 60%;
+  height: 48px;
 }
 
 .wCard {
   position: relative;
   font-size: 64px;
   height: 440px;
-  background: #111;
+  background: #111111;
   text-align: center;
   margin: 16px 0px;
 }
@@ -162,7 +161,7 @@ footer {
   position: relative;
   font-size: 64px;
   height: 95%;
-  background: #111;
+  background: #111111;
   text-align: center;
   margin: 16px 0px;
 }
@@ -177,33 +176,51 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 16px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.weekCard__timing-week {
+.weekCard__timing--week {
   text-align: center;
   width: 20%;
 }
 
+.weekCard__date {
+  width: 20%;
+}
+
 .weekCard__iconAreaWeek {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 20%;
 }
 
 .weekCard__tempMax {
   color: #ff9b00;
-  width: 10%;
+  width: 20%;
 }
 
 .weekCard__tempMin {
   color: #00ffe6;
-  width: 10%;
+  width: 20%;
 }
 
-.weekCard__iconAreaWeek div div:nth-child(1) {
-  position: absolute;
-  top: 22px;
+.hourCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 40px;
+  background: #111111;
+}
+
+.hourCard__timing--hour {
+  text-align: center;
+}
+
+.hourCard__iconAreaHour {
+  height: 50px;
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

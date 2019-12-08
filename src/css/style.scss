@@ -1,4 +1,5 @@
 $basicFontColor:rgb(255, 255, 255);
+$backGroundColor:rgb(17, 17, 17);
 $windColor:rgb(20, 255, 0);
 $mainTempColor:rgb(250, 255, 0);
 
@@ -52,15 +53,14 @@ footer{
 
 .weekCard__iconAreaWeek .svgColor{
   fill:$basicFontColor;
-  width: 60%;
-  height: 60%;
+  height: 48px;
 }
 
 .wCard{
   position: relative;
   font-size: 64px;
   height: 440px;
-  background: #111;
+  background: $backGroundColor;
   text-align: center;
   margin: 16px 0px;
   &__date{
@@ -136,7 +136,7 @@ footer{
   position: relative;
   font-size: 64px;
   height: 95%;
-  background: #111;
+  background: $backGroundColor;
   text-align: center;
   margin: 16px 0px;
   &__weekDate{
@@ -146,32 +146,40 @@ footer{
     display: flex;
     justify-content: space-around;
     margin: 0 16px;
-    align-items:baseline;
+    align-items:center;
   }
-  &__timing-week{
+  &__timing--week{
     text-align: center;
     width: 20%;
   }
-  // &__date{
-    
-  // }
+  &__date{
+    width: 20%;
+  }
   &__iconAreaWeek{
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 20%;
   }
   &__tempMax{
     color: rgb(255, 155, 0);
-    width: 10%;
+    width: 20%;
   }
   &__tempMin{
     color: rgb(0, 255, 230);
-    width: 10%;
+    width: 20%;
   }
 }
 
-.weekCard__iconAreaWeek div div:nth-child(1){
-  position: absolute;
-  top: 22px;
+.hourCard{
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+  background: $backGroundColor;
+  &__timing--hour{
+    text-align: center;
+  }
+  &__iconAreaHour{
+    height: 50px;
+    width: 50px;
+  }
 }
-
 
