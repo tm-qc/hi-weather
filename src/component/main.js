@@ -2,6 +2,7 @@ import prefix_header from './header.js'
 import prefix_footer from './footer.js'
 import prefix_icons from './icons.js'
 import prefix_week from './week.js'
+import myMixin from '../mixins/main.js'
 
 export default {
   data(){
@@ -17,6 +18,7 @@ export default {
     prefix_footer,
     prefix_week,
   },
+  mixins: [myMixin],
   template:`
   <div>
   <prefix_header />
@@ -98,23 +100,6 @@ export default {
       }catch(error){
         console.log('Api通信失敗：'+error.response.status +' '+ error.response.statusText)
       }
-    },
-    //本当はweek.jsと共通関数かしたかったけど、グローバルに置くとsafariでエラーになるので後日確認
-    timeStampCompile(timestamp,mode){
-      const d = new Date( timestamp * 1000 );
-      const year  = d.getFullYear();
-      const month = ( d.getMonth() + 1  < 10 ) ? '0' + d.getMonth() + 1  : d.getMonth() + 1
-      const day  = ( d.getDate()   < 10 ) ? '0' + d.getDate()   : d.getDate();
-      const hour = ( d.getHours()   < 10 ) ? '0' + d.getHours()   : d.getHours();
-      const min  = ( d.getMinutes() < 10 ) ? '0' + d.getMinutes() : d.getMinutes();
-      const sec   = ( d.getSeconds() < 10 ) ? '0' + d.getSeconds() : d.getSeconds();
-      let timeFmt = ''
-      if(mode === 'now'){
-        timeFmt = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec ;
-      }else{
-        timeFmt = String(year).slice(-2) + '-' + month + '-' + day
-      }
-      return timeFmt
     },
     selected(){
       this.get(this.selectVal)

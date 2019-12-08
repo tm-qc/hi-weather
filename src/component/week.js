@@ -1,4 +1,5 @@
 import prefix_icons from './icons.js'
+import myMixin from '../mixins/main.js'
 export default{
   data(){
     return {
@@ -6,6 +7,7 @@ export default{
       ss:this.$store.state,
     }
   },
+  mixins: [myMixin],
   template:`
   <div v-if="ss.getComp" >
     <div class="weekCard">
@@ -33,24 +35,6 @@ export default{
     },
     mathRound(){
       return (num)=>Math.round(num)
-    }
-  },
-  methods:{
-    timeStampCompile(timestamp,mode){
-      const d = new Date( timestamp * 1000 );
-      const year  = d.getFullYear();
-      const month = ( d.getMonth() + 1  < 10 ) ? '0' + d.getMonth() + 1  : d.getMonth() + 1
-      const day  = ( d.getDate()   < 10 ) ? '0' + d.getDate()   : d.getDate();
-      const hour = ( d.getHours()   < 10 ) ? '0' + d.getHours()   : d.getHours();
-      const min  = ( d.getMinutes() < 10 ) ? '0' + d.getMinutes() : d.getMinutes();
-      const sec   = ( d.getSeconds() < 10 ) ? '0' + d.getSeconds() : d.getSeconds();
-      let timeFmt = ''
-      if(mode === 'now'){
-        timeFmt = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec ;
-      }else{
-        timeFmt = String(year).slice(-2) + '-' + month + '-' + day
-      }
-      return timeFmt
     }
   }
 }
